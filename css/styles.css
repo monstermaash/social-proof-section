@@ -1,0 +1,204 @@
+/* GENERAL */
+body {
+  padding: 7% 15%;
+}
+
+p {
+  font-family: 'League Spartan', sans-serif;
+  line-height: 1.25;
+}
+
+/* BACKGROUND */
+.bg-top-desktop {
+  position: absolute;
+  top: 0;
+  left: 175px;
+}
+
+.bg-btm-desktop {
+  position: absolute;
+  right: 220px;
+}
+
+/* TOP SECTION */
+.top-section {
+  margin-bottom: 4rem;
+}
+
+/* TOP LEFT SECTION */
+.heading {
+  font-family: 'League Spartan', sans-serif;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.sub-heading {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;
+  color: hsl(303, 10%, 53%);
+  max-width: 500px;
+}
+
+/* TOP RIGHT SECTION */
+.top-right-section {
+  padding-top: 2rem;
+}
+
+.star-box {
+  float: left;
+  margin-right: 25px;
+  width: 140px;
+}
+
+.rating-box-1, .rating-box-2, .rating-box-3 {
+  background-color: hsl(300, 24%, 96%);
+  width: 475px;
+  padding: 3% 4%;
+  margin-bottom: 4%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.rating-box-2 {
+  left: 50px;
+}
+.rating-box-3 {
+  left: 100px;
+}
+
+.star {
+  padding: 0 3px;
+}
+
+.ratings {
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(300, 43%, 22%);
+  margin: 0;
+  position: relative;
+  top: 4px;
+}
+
+/* BTM SECTION */
+.btm-section {
+  margin-bottom: 5rem;
+  justify-content: space-between;
+}
+
+.testimonial-colton {
+  position: relative;
+}
+
+.testimonial-irene {
+  position: relative;
+  bottom: -20px;
+}
+
+.testimonial-anne {
+  position: relative;
+  bottom: -40px;
+}
+
+.user {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  position: relative;
+}
+
+.user-pfp-box {
+  padding: 10% 10% 0;
+  width: 100px;
+  float: left;
+}
+
+.user-pfp {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.user-info {
+  padding: 10% 10% 5%;
+  font-weight: bold;
+}
+
+.name {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.buyer {
+  margin: 0;
+  padding: 0;
+  color: hsl(333, 80%, 67%);
+}
+
+.testimonials {
+  background-color: hsl(300, 43%, 22%);
+  font-size: 15px;
+  padding: 5% 10% 10%;
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  top: -15px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1360px) {
+  body {
+    background-color: lightblue;
+    padding: 20% 8%;
+  }  
+  .top-right-section {
+    padding: 0;
+  }
+  .rating-box-1, .rating-box-2, .rating-box-3 {
+    position: static;
+    display: grid;
+    max-width: 475px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: lightblue;
+    padding: 20% 8%;
+  }  
+  .top-section {
+    margin-bottom: 2rem;
+  }
+  .heading {
+    font-size: 40px;
+    text-align: center;
+  }
+  .sub-heading {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .rating-box-1, .rating-box-2, .rating-box-3 {
+    position: static;
+    display: grid;
+    max-width: 300px;
+    text-align: center;
+    place-content: center;
+  }
+  .star-box {
+    place-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+  }
+  .testimonials {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  .bg-top-desktop, .bg-btm-desktop {
+    display: none;
+  }
+}
